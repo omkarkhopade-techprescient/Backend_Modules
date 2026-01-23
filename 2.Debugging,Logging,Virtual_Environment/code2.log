@@ -1,0 +1,52 @@
+2026-01-22 19:35:06,746 - INFO - Task started
+2026-01-22 19:35:06,746 - DEBUG - Input values received: a=10, b=5
+2026-01-22 19:35:06,746 - DEBUG - divide_numbers() called with a=10, b=5
+2026-01-22 19:35:06,746 - INFO - Performing division: 10 / 5
+2026-01-22 19:35:06,746 - DEBUG - Division result: 2.0
+2026-01-22 19:35:06,746 - INFO - Task completed successfully. Result = 2.0
+2026-01-22 19:35:06,746 - INFO - Task started
+2026-01-22 19:35:06,746 - DEBUG - Input values received: a=10, b=0
+2026-01-22 19:35:06,746 - DEBUG - divide_numbers() called with a=10, b=0
+2026-01-22 19:35:06,746 - INFO - Performing division: 10 / 0
+2026-01-22 19:35:06,746 - ERROR - Cannot divide by zero
+Traceback (most recent call last):
+  File "d:\Tech_Prescient\freshers-training-modules(self_practice)\2.Backend_modules\2.Debugging,Logging,Virtual_Environment\assignment2.py", line 50, in divide_numbers
+    result = a / b
+             ~~^~~
+ZeroDivisionError: division by zero
+2026-01-22 19:35:06,760 - WARNING - Task failed due to an error
+Traceback (most recent call last):
+  File "d:\Tech_Prescient\freshers-training-modules(self_practice)\2.Backend_modules\2.Debugging,Logging,Virtual_Environment\assignment2.py", line 67, in perform_task
+    result = divide_numbers(a, b)
+             ^^^^^^^^^^^^^^^^^^^^
+  File "d:\Tech_Prescient\freshers-training-modules(self_practice)\2.Backend_modules\2.Debugging,Logging,Virtual_Environment\assignment2.py", line 56, in divide_numbers
+    raise e
+  File "d:\Tech_Prescient\freshers-training-modules(self_practice)\2.Backend_modules\2.Debugging,Logging,Virtual_Environment\assignment2.py", line 50, in divide_numbers
+    result = a / b
+             ~~^~~
+ZeroDivisionError: division by zero
+2026-01-22 19:39:28,221 - INFO - Task started
+2026-01-22 19:39:28,221 - DEBUG - Input values received: a=10, b=5
+2026-01-22 19:39:28,221 - DEBUG - divide_numbers() called with a=10, b=5
+2026-01-22 19:39:28,221 - INFO - Performing division: 10 / 5
+2026-01-22 19:39:28,225 - DEBUG - Division result: 2.0
+2026-01-22 19:39:28,225 - INFO - Task completed successfully. Result = 2.0
+2026-01-22 19:39:28,225 - INFO - Task started
+2026-01-22 19:39:28,225 - DEBUG - Input values received: a=10, b=0
+2026-01-22 19:39:28,225 - DEBUG - divide_numbers() called with a=10, b=0
+2026-01-22 19:39:28,225 - INFO - Performing division: 10 / 0
+2026-01-22 19:39:28,225 - ERROR - Cannot divide by zero
+Traceback (most recent call last):
+  File "d:\Tech_Prescient\freshers-training-modules(self_practice)\2.Backend_modules\2.Debugging,Logging,Virtual_Environment\assignment2.py", line 44, in divide_numbers
+    result = a / b
+             ~~^~~
+ZeroDivisionError: division by zero
+2026-01-22 19:39:28,234 - WARNING - Task failed due to an error
+Traceback (most recent call last):
+  File "d:\Tech_Prescient\freshers-training-modules(self_practice)\2.Backend_modules\2.Debugging,Logging,Virtual_Environment\assignment2.py", line 61, in perform_task
+    result = divide_numbers(a, b)
+             ^^^^^^^^^^^^^^^^^^^^
+  File "d:\Tech_Prescient\freshers-training-modules(self_practice)\2.Backend_modules\2.Debugging,Logging,Virtual_Environment\assignment2.py", line 44, in divide_numbers
+    result = a / b
+             ~~^~~
+ZeroDivisionError: division by zero

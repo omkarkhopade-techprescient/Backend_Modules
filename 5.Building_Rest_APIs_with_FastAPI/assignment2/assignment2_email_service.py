@@ -10,7 +10,6 @@ from assignment2_config import (
 )
 from assignment2_models import EmailNotificationLog, Task, User
 
-
 # Email templates
 TASK_ASSIGNMENT_TEMPLATE = """
 <html> 

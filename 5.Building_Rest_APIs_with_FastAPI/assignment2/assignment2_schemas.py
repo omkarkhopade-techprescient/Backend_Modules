@@ -1,4 +1,4 @@
-from pydantic import BaseModel, EmailStr
+from pydantic import BaseModel, EmailStr , Field
 from datetime import datetime
 from typing import Optional
 from assignment2_models import UserRole, TaskStatus, TaskPriority
@@ -8,7 +8,14 @@ from assignment2_models import UserRole, TaskStatus, TaskPriority
 
 class UserBase(BaseModel):
     email: EmailStr
+    password: Optional[str] = Field(
+        None,
+        min_length=8,
+        max_length=72,
+        description="Password must be 8–72 characters"
+    )
     role: UserRole = UserRole.USER
+    
 
 
 class UserCreate(UserBase):
@@ -67,7 +74,7 @@ class TaskUpdate(BaseModel):
     description: Optional[str] = None
     start_date: Optional[datetime] = None
     end_date: Optional[datetime] = None
-    priority: Optional[TaskPriority] = None
+    priority: Optional[TaskPriority] = None 
     status: Optional[TaskStatus] = None
 
 
